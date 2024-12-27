@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="./assets/css/user_dashboard.css">
+	<link rel="stylesheet" href="./assets/css/calender.css">
+
+	<title>User IRC-2024</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Hi User!</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			
+			<li>
+				<a href="index.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			
+			<a href="#" class="profile">
+				<img src="./assets/images/pngwing.com.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+				</div>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<h3>5</h3>
+						<p>Sessions</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<h3>10</h3>
+						<p>Participants</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-circle' src ></i>
+					<span class="text">
+						<h3>5</h3>
+						<p>Tracks</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Sessions</h3>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Session</th>
+								<th>Date</th>
+								<th>Time</th>
+								<th>Place</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<p>Session 01</p>
+								</td>
+								<td>19-12-2024</td>
+								<td>08:00</td>
+								<td>Mini Auditorium</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Session 02</p>
+								</td>
+								<td>19-12-2024</td>
+								<td>09:00</td>
+								<td>Activity Room</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Session 03</p>
+								</td>
+								<td>19-12-2024</td>
+								<td>10:00</td>
+								<td>Z0 729</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Session 04</p>
+								</td>
+								<td>19-12-2024</td>
+								<td>11:00</td>
+								<td>D2 521</td>
+							</tr>
+							<tr>
+								<td>
+									<p>Session 05</p>
+								</td>
+								<td>19-12-2024</td>
+								<td>12:00</td>
+								<td>Z0 725</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="todo">
+					<div class="head">
+						<h3>calendar</h3>
+					</div>
+
+					<div class="calendar">
+						<div class="calendar-header">
+							<span class="month-picker" id="month-picker">February</span>
+							<div class="year-picker">
+								<span class="year-change" id="prev-year">
+									<pre><</pre>
+								</span>
+								<span id="year">2021</span>
+								<span class="year-change" id="next-year">
+									<pre>></pre>
+								</span>
+							</div>
+						</div>
+						<div class="calendar-body">
+							<div class="calendar-week-day">
+								<div>Sun</div>
+								<div>Mon</div>
+								<div>Tue</div>
+								<div>Wed</div>
+								<div>Thu</div>
+								<div>Fri</div>
+								<div>Sat</div>
+							</div>
+							<div class="calendar-days"></div>
+						</div>
+						<div class="month-list"></div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="./assets/js/user_dashboard.js"></script>
+	<script src="./assets/js/calender.js"></script>
+</body>
+</html>

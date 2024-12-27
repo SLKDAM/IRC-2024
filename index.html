@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar with Smooth Scroll</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo"></div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tracks">Tracks</a></li>
+      <li><a href="#speaker_sec">Speakers</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <!-- Login Button -->
+    <button class="login-button" type="button" onclick="loginFunction()">Login</button>
+
+  </nav>
+
+  <!-- Sections -->
+  <section id="about">
+    <div class="about_container">
+        <h1>3<sup>rd</sup> International Research Conference of ITUM - 2024</h1>
+        <p>The 3rd International Research Conference of ITUM - 2024, themed "Exploring New Frontiers: Innovative and Cross-disciplinary Approaches to Sustainable Engineering Practices", builds on ITUM's tradition of promoting research excellence since its first symposium in 2013. Initially focused on fostering an internal research culture, the symposium expanded in 2019 to include industry researchers and, in 2021, welcomed contributions from other universities and industries across Sri Lanka. In 2022, it gained international participation, evolving into the "International Research Conference of ITUM."</p>
+        <p>Last year’s collaboration with the International Institute of Management Sciences highlighted Industry 5.0 themes. For 2024, ITUM invites local and international researchers to share insights across disciplines, aiming to advance sustainable engineering. The event will feature a published abstract book with an ISSN number, showcasing research in multiple tracks to encourage innovation and collaboration.</p>
+    </div>
+  </section>
+
+  <section id="tracks">
+        <h1>Tracks</h1>
+        <div class="track_container">
+            <div class="track_item">
+                <h2><i class="fas fa-check-circle"></i>Track 1: Sustainable Infrastructure and Mechanical Systems.</h2>
+                <p>Sustainable Construction Materials, Green Building Technologies, Transportation Systems, Sustainable Water Management, Climate Change, Environmental Sustainability, Sustainable Transportation, Urban Planning, Urban Drainage Systems, Water Recycling and Reuse, Energy-Efficient Systems</p>
+            </div>
+            <div class="track_item">
+                <h2><i class="fas fa-check-circle"></i>Track 2: Renewable Energy Systems and Smart Grid Technologies.</h2>
+                <p>Advancements in Solar Technology, Wind Energy, Telecommunications Technologies, Smart Energy</p>
+            </div>
+            <div class="track_item">
+                <h2><i class="fas fa-check-circle"></i>Track 3: Sustainable Materials and Green Manufacturing Processes.</h2>
+                <p>Biodegradable and Sustainable Polymers, Sustainable Textile Production, Processing Techniques, Material Science, Polymer Processing, Separation Processes, Recycling and Upcycling Technologies</p>
+            </div>
+            <div class="track_item">
+                <h2><i class="fas fa-check-circle"></i>Track 4: Digital Solutions for Sustainable Engineering.</h2>
+                <p>AI and Machine Learning, Big Data, IoT for Smart Infrastructure Management, Simulation and Modeling Tools</p>
+            </div>
+            <div class="track_item">
+                <h2><i class="fas fa-check-circle"></i>Track 5: Interdisciplinary Approaches to Sustainability in Education.</h2>
+                <p>STEM and Humanities integration, Innovative Teaching methods, Quantitative Analysis and Modeling, Ethical and Cultural Dimensions of Engineering</p>
+            </div>
+        </div>
+  </section>
+
+  <section id="speaker_sec">
+    <h1>Our Speakers</h1>
+    <div class="speakers-section">
+        <div class="speakers">
+            <!-- Chief Guest in the first line -->
+            <div class="speaker chief-guest">
+                <h3>Chief Guest</h3>
+                <img src="./assets/images/upn.jpg" alt="Chief Guest">
+                <p><strong>Prof. U. P. Nawagamumuwa</strong><br>
+                    Department of Civil Engineering,<br>
+                    University of Moratuwa
+                </p>
+            </div>
+        </div>
+    
+        <div class="speakers second-row">
+            <!-- Keynote Speaker -->
+            <div class="speaker">
+                <h3>Keynote Speaker</h3>
+                <img src="./assets/images/id.jpg" alt="Keynote Speaker">
+                <p><strong>Dr. Ishara Dharmasena</strong><br>
+                    Wolfson School of Mechanical, Electrical &<br>
+                    Manufacturing Engineering,<br>
+                    Loughborough University, England
+                </p>
+            </div>
+            <!-- Special Speaker -->
+            <div class="speaker">
+                <h3>Special Speaker</h3>
+                <img src="./assets/images/wbmt.jpg" alt="Special Speaker">
+                <p><strong>Assoc. Prof. W. B. M. Thoradeniya</strong><br>
+                    Division of Civil Engineering Technology,<br>
+                    Institute of Technology,<br>
+                    University of Moratuwa
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="speeches-section">
+        <h2>Speeches</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Speaker</th>
+                    <th>Title / Theme</th>
+                    <th>Date & Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dr. Ishara Dharmasena<br>(Keynote Speech)</td>
+                    <td>
+                        <a href="#">Topic: Super-Smart Textiles: A Cross-Disciplinary Journey Towards Future Wearable Technologies</a>
+                    </td>
+                    <td>18th Dec. 2024<br>9:40 am - 10:10 am</td>
+                </tr>
+
+                <tr>
+                    <td>Assoc. Prof. W. B. M. Thoradeniya<br>(Special Speech)</td>
+                    <td>
+                        <a href="#">Topic: Multiple Intelligence and sustainability in the Engineering Industry</a>
+                    </td>
+                    <td>18th Dec. 2024<br>10:20 am - 10:50 am</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </section>
+
+
+<!-- Contact Us Section -->
+<section id="contact">
+    <h1>Contact Us</h1>
+    <div class="contact_container">
+        <div class="profile-row">
+            <div class="profile">
+                <img alt="Head - Research Unit" height="150" src="./assets/images/mmpds.jpg" width="150"/>
+                <h3>Head - Research Unit</h3>
+                <p>Mrs. M. M. P. D. Samarasekara</p>
+                <p>
+                    <i class="fas fa-envelope email-icon"></i>
+                    <a href="mailto:researchunit@itum.mrt.ac.lk">researchunit@itum.mrt.ac.lk</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="profile-row">
+            <div class="profile">
+                <img alt="Conference Chair" height="150" src="./assets/images/kg.jpg" width="150"/>
+                <h3>Conference Chair</h3>
+                <p>Dr. (Mrs.) Kalpana Galappaththi</p>
+                <p>
+                    <i class="fas fa-envelope email-icon"></i>
+                    <a href="mailto:kgalappaththi@itum.mrt.ac.lk">kgalappaththi@itum.mrt.ac.lk</a>
+                </p>
+            </div>
+
+            <div class="profile">
+                <img alt="Conference Co-chair" height="150" src="./assets/images/npks.jpg" width="150"/>
+                <h3>Conference Co-chair</h3>
+                <p>Dr. (Mrs.) N. P. K. Semananda</p>
+                <p>
+                    <i class="fas fa-envelope email-icon"></i>
+                    <a href="mailto:premilas@itum.mrt.ac.lk">premilas@itum.mrt.ac.lk</a>
+                </p>
+            </div>
+
+            <div class="profile">
+                <img alt="Conference Co-chair" height="150" src="./assets/images/pbtkp.jpg" width="150"/>
+                <h3>Conference Co-chair</h3>
+                <p>Dr. (Mrs.) P. B. T. K. Premarathne</p>
+                <p>
+                    <i class="fas fa-envelope email-icon"></i>
+                    <a href="mailto:kpremarathne@itum.mrt.ac.lk">kpremarathne@itum.mrt.ac.lk</a>
+                </p>
+            </div>
+
+            <div class="profile">
+                <img alt="Conference Secretary" height="150" src="./assets/images/ndt.jpg" width="150"/>
+                <h3>Conference Secretary</h3>
+                <p>Dr. (Ms.) Nadeeka D. Tissera</p>
+                <p>
+                    <i class="fas fa-envelope email-icon"></i>
+                    <a href="mailto:nadeekat@itum.mrt.ac.lk">nadeekat@itum.mrt.ac.lk</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="contact_container_down">
+            <div class="contact-info">
+                <h2>CONTACT INFO</h2>
+                <p>
+                    <strong>INSTITUTE OF TECHNOLOGY</strong><br>
+                    University of Moratuwa,<br>
+                    Diyagama,<br>
+                    Homagama,<br>
+                    Sri Lanka.
+                </p>
+                <p>
+                    TEL: (+94) 112 124 000<br>
+                    FAX: (+94) 112 117 040<br>
+                    EMAIL: info@itum.mrt.ac.lk
+                </p>
+            </div>  
+            <div class="contact-info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.685748394122!2d79.99045147362942!3d6.808027593189484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24e1a4acef3e7%3A0xb2ef9c84206274fc!2sInstitute%20of%20Technology%2C%20University%20of%20Moratuwa!5e0!3m2!1sen!2slk!4v1734804730668!5m2!1sen!2slk" 
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <button id="scrollToTop" class="scroll-up-btn">↑</button>
+        </div>
+    </div>
+</section>
+
+<script src="./assets/js/script.js"></script>
+</body>
+<footer>
+    <p>&copy; IRC (International Research Conference) - 2024</p>
+</footer>
+</html>

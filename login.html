@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in & Sign up Form</title>
+    <link rel="stylesheet" href="./assets/css/login.css" />
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <div class="inner-box">
+          <div class="forms-wrap">
+            <form action="login.html" autocomplete="off" class="sign-in-form">
+              <div class="logo">
+              </div>
+
+              <div class="heading">
+                <h2>Welcome Back</h2>
+                <h6>Not registred yet?</h6>
+                <a href="#" class="toggle">Sign up</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    id="sign-in-user-name"
+                    required
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    id="sign-in-password"
+                    required
+                    
+                  />
+                  <label>Password</label>
+                </div>
+
+                <input type="submit" value="Sign In" class="sign-btn" id="sign-in-btn" />
+
+                <p class="text">
+                  Forgotten your password ?
+                  <a href="#">Get help</a>
+                </p>
+              </div>
+            </form>
+
+            <form action="login.html" autocomplete="off" class="sign-up-form">
+              <div class="heading">
+                <h2>Let's Start.</h2>
+                <h6>Already have an account?</h6>
+                <a href="#" class="toggle">Sign in</a>
+              </div>
+
+              <div class="actual-form">
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    id="user-name"
+                    minlength="4"
+                    class="input-field"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Name</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="text"
+                    class="input-field"
+                    autocomplete="off"
+                    id="user-organization"
+                    required
+                  />
+                  <label>Organization</label>
+                </div>
+
+                <div class="input-wrap">
+                  <select
+                    class="input-field"
+                    id="session"
+                    autocomplete="off"
+                    required>
+                    <option value="0">Select Session</option>
+                    <option value="session-1">Session 1</option>
+                    <option value="session-2">Session 2</option>
+                    <option value="session-3">Session 3</option>
+                    <option value="session-4">Session 4</option>
+                    <option value="session-5">Session 5</option>
+                  </select>
+                  
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="email"
+                    class="input-field"
+                    id="user-email"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Email</label>
+                </div>
+
+                <div class="input-wrap">
+                  <input
+                    type="password"
+                    minlength="4"
+                    class="input-field"
+                    id="sign-up-password"
+                    autocomplete="off"
+                    required
+                  />
+                  <label>Password</label>
+                </div>
+
+                <input type="submit" value="Sign Up" class="sign-btn" id="sign-up-btn" />
+
+              </div>
+            </form>
+          </div>
+
+          <div class="carousel">
+            <div class="images-wrapper">
+              <img src="./assets/images/ITUM.jpg" class="image img-1 show" alt="" />
+              <img src="./assets/images/3.jpg" class="image img-2" alt="" />
+              <img src="./assets/images/FW9B3170.jpg" class="image img-3" alt="" />
+            </div>
+
+            <div class="text-slider">
+              <div class="text-wrap">
+                <div class="text-group">
+                  <h2>ITUM</h2>
+                  <h2>IRC -2024</h2>
+                  <h2>Spread Your Knowledge</h2>
+                </div>
+              </div>
+
+              <div class="bullets">
+                <span class="active" data-value="1"></span>
+                <span data-value="2"></span>
+                <span data-value="3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script type="module" src="./assets/js/login.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+
+  </body>
+</html>
