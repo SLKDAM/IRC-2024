@@ -27,7 +27,7 @@ body {
 .navbar .logo {
     width: 100px;
     height: 50px;
-    background: url("images/MicrosoftTeams-image.png");
+    background: url("../images/MicrosoftTeams-image.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
